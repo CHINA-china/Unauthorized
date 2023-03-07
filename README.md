@@ -21,17 +21,17 @@ pip install -r requirements.txt
 - **下载浏览器driver驱动**
 
 - 查看浏览器版本
-![chrome](.\static\picture\Install\chrome.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/logo.png)
 - 下载对应版本驱动（若没有对应版本，可下载相近版本）
 ```
 下载地址：https://registry.npmmirror.com/binary.html?path=chromedriver/                                  
 ```
 
-![chrome](.\static\picture\Install\drive1.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/drive1.png)
 
-![chrome](.\static\picture\Install\drive2.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/drive2.png)
 - 将driver移动到python3根目录
-![chrome](.\static\picture\Install\python3.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/python3.png)
 
 ## 使用
 
