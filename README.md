@@ -38,7 +38,7 @@ pip install -r requirements.txt
 - **简单使用**
 
 - ❌使用姿势-->直接传入域名
-- ✔使用姿势-->将需要访问的网址先用浏览器访问一遍，再复制地址传入
+- ✔使用姿势-->将需要测试的网址先用浏览器访问一遍，再复制地址传入
 ```
 python Unauthorized.py -u http://example.com
 ```
