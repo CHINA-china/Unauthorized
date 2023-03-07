@@ -3,7 +3,7 @@
 ### 一款高效率的前端未授权访问检测工具
 
 
-![logo](https://github.com/CHINA-china/Unauthorize/blob/master/static/logo.png)
+![logo](https://github.com/CHINA-china/Unauthorize/blob/master/static/logo.png?raw=true)
 
 ## 工具特点
 
@@ -21,17 +21,17 @@ pip install -r requirements.txt
 - **下载浏览器driver驱动**
 
 - 查看浏览器版本
-![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/chrome.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/chrome.png?raw=true)
 - 下载对应版本驱动（若没有对应版本，可下载相近版本）
 ```
 下载地址：https://registry.npmmirror.com/binary.html?path=chromedriver/                                  
 ```
 
-![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/drive1.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/drive1.png?raw=true)
 
-![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/drive2.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/drive2.png?raw=true)
 - 将driver移动到python3根目录
-![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/python3.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/python3.png?raw=true)
 
 ## 使用
 
@@ -50,6 +50,9 @@ python Unauthorized.py -u http://example.com
 cd Unauthorized
 python Unauthorized.py -u http://example.com -d 自定义字典路径
 ```
+- **效果展示**
+![demo1](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/demo/demo1.png?raw=true)
+![demo2](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/demo/demo2.png?raw=true)
 
 ## 引用
 - 默认字典来自以下优先项目：
