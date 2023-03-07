@@ -54,8 +54,8 @@ python Unauthorized.py -u http://example.com -d 自定义字典路径
   1. RouteVulScan (https://github.com/F6JO/RouteVulScan)
 
 
-
-
+## 免责声明
+- 工具仅可用作学习，以及经过授权的渗透测试，否则后果自负。
 
 
 
