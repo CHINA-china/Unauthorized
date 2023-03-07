@@ -40,12 +40,14 @@ pip install -r requirements.txt
 - ❌使用姿势-->直接传入域名
 - ✔使用姿势-->将需要测试的网址先用浏览器访问一遍，再复制地址传入
 ```
+cd Unauthorized
 python Unauthorized.py -u http://example.com
 ```
 - **扩展使用**
 
 - -d 指定自定义的字典(不使用该参数，程序将使用默认字典)
 ```
+cd Unauthorized
 python Unauthorized.py -u http://example.com -d 自定义字典路径
 ```
 
