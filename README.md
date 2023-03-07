@@ -3,7 +3,7 @@
 ### 一款高效率的前端未授权访问检测工具
 
 
-![logo](.\static\logo.png)
+![logo](https://github.com/CHINA-china/Unauthorize/blob/master/static/logo.png)
 
 ## 工具特点
 
@@ -21,7 +21,7 @@ pip install -r requirements.txt
 - **下载浏览器driver驱动**
 
 - 查看浏览器版本
-![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/logo.png)
+![chrome](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/Install/chrome.png)
 - 下载对应版本驱动（若没有对应版本，可下载相近版本）
 ```
 下载地址：https://registry.npmmirror.com/binary.html?path=chromedriver/                                  
