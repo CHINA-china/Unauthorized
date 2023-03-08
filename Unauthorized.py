@@ -1,8 +1,9 @@
 import time
-from lib import InitInfo
-from lib import FindPath
 from lib import DictUnauthorized
+from lib import FindPath
+from lib import InitInfo
 from lib import PathUnauthorized
+from lib import OutHtml
 
 
 def main():
@@ -39,11 +40,9 @@ def main():
     # 检测前端泄露path未授权访问
     pathunauthorized = PathUnauthorized.Class_PathUnauthorized()
     pathunauthorized.Path_Unauthorized(path)
-
     # 检测字典未授权访问
     print("[{}]".format(time.strftime('%H:%M:%S', time.localtime(time.time()))) + "开始检测字典内路径")
-    DictUnauthorized.Threading(InitInfo.Class_InitInfo().Url_Domain, path, InitInfo.Class_InitInfo().args.dict)
-
+    DictUnauthorized.Threading(InitInfo.Class_InitInfo().Url_Domain, path)
     time.sleep(3)
     while True:
         if not DictUnauthorized.dict_queue.empty():
@@ -54,11 +53,20 @@ def main():
                 DictUnauthorized.path_list.task_done()
                 print("\r" + f"\033[1;32m[Success]\033[0m\033[1;31m{i['info']}\033[0m",
                       f"\033[0;33m{i['url']}\033[0m", end='\n')
+                # 输出HTML用
+                temp = {
+                    '标题': i['title'],
+                    '网址': i['url']
+                }
+                # 利用pathunauthorized对象调用html_reports
+                pathunauthorized.html_reports.append(temp)
         else:
             print("\r" + "[{}]".format(time.strftime('%H:%M:%S', time.localtime(time.time()))) +
                   "当前请求剩余:0     ")
+            # 输出html报告
+            OutHtml.Html(pathunauthorized.html_reports)
+            print("\r" + "[{}]".format(time.strftime('%H:%M:%S', time.localtime(time.time()))) + "检测已完成，已在reports目录生成报告。")
             break
-    print("\r"+"[{}]".format(time.strftime('%H:%M:%S', time.localtime(time.time()))) + "检测已完成")
 
 
 if __name__ == '__main__':

@@ -2,8 +2,10 @@
 
 ### 一款高效率的前端未授权访问检测工具
 
-
 ![logo](https://github.com/CHINA-china/Unauthorize/blob/master/static/logo.png?raw=true)
+
+## 免责声明
+- 工具仅可用作学习，以及经过授权的渗透测试，否则后果自负。
 
 ## 工具特点
 
@@ -45,22 +47,32 @@ python Unauthorized.py -u http://example.com
 ```
 - **扩展使用**
 
-- -d 指定自定义的字典(不使用该参数，程序将使用默认字典)
+- 自定义字典参数解释
 ```
-cd Unauthorized
-python Unauthorized.py -u http://example.com -d 自定义字典路径
+"info":提示信息。
+"method":请求方法。
+"url":测试未授权访问的路径。
+"state":响应码，作为判断未授权的条件之一。
+"re":正则匹配关键字，作为判断未授权的条件之一。
 ```
 - **效果展示**
 ![demo1](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/demo/demo1.png?raw=true)
 ![demo2](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/demo/demo2.png?raw=true)
+
+
+## 更新
+
+v20230308
+1. 优化js提取，解决js重复提取问题。
+2. 去除自定义字典功能，新增自动输出html报告功能。
+
 
 ## 引用
 - 默认字典来自以下优先项目：
   1. RouteVulScan (https://github.com/F6JO/RouteVulScan)
 
 
-## 免责声明
-- 工具仅可用作学习，以及经过授权的渗透测试，否则后果自负。
+
 
 
 

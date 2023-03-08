@@ -50,9 +50,9 @@ class Class_DictUnauthorized(InitInfo.Class_InitInfo):
 dict_queue = Queue()
 
 
-def Threading(Domain, path, dict_path):
-    # 对列，put数据
-
+def Threading(Domain, path):
+    # 字典路径
+    dict_path = r'dict\dict.txt'
     if len(path) == 0:
         for d in open(dict_path):
             d = json.loads(d)

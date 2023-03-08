@@ -20,14 +20,13 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
         init(autoreset=True)
         # 检测dict路径未授权
         print("\r" + "[{}]".format(time.strftime('%H:%M:%S', time.localtime(time.time()))) + "正在检测未授权访问")
-        driver = webdriver.Chrome()
         options = webdriver.ChromeOptions()
         options.add_argument('blink-settings=imagesEnabled=false')
-        options.add_argument('--headless')
+        driver = webdriver.Chrome(options=options)
         dic_list = []
         for p in path:
             # 检测前端泄露路径未授权
-            driver.set_page_load_timeout(1)  # 设置超时时间为1秒，如果1秒后网页还是没有加载完成则抛出异常
+            driver.set_page_load_timeout(0.5)  # 设置超时时间为1秒，如果1秒后网页还是没有加载完成则抛出异常
             # 根据网站传参的格式，进行不同的请求，增加运行速度
             if "#" in self.args.url:
                 try:
@@ -82,3 +81,9 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
             if responses.status_code == 200:
                 print(f"\033[1;32m[Success]\033[0m\033[1;31m{i['title']}\033[0m",
                       f"\033[0;33m{i['url']}\033[0m")
+                # 输出HTML用
+                temp = {
+                    '标题':i['title'],
+                    '网址': i['url']
+                }
+                self.html_reports.append(temp)
