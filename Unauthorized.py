@@ -55,7 +55,7 @@ def main():
                       f"\033[0;33m{i['url']}\033[0m", end='\n')
                 # 输出HTML用
                 temp = {
-                    '标题': i['title'],
+                    '标题': i['info'],
                     '网址': i['url']
                 }
                 # 利用pathunauthorized对象调用html_reports
