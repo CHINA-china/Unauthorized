@@ -47,13 +47,32 @@ python Unauthorized.py -u http://example.com
 ```
 - **扩展使用**
 
-- 自定义字典参数解释
+- 自定义常见未授权路径字典
 ```
-"info":提示信息。
-"method":请求方法。
-"url":测试未授权访问的路径。
-"state":响应码，作为判断未授权的条件之一。
-"re":正则匹配关键字，作为判断未授权的条件之一。
+将需要添加的路径按格式添加到dict目录下的dict.txt即可
+参数解释：
+"info"：提示信息。
+"method"：请求方法。
+"url"：测试未授权访问的路径。
+"state"：响应码，作为判断未授权的条件之一。
+"re"：正则匹配关键字，作为判断未授权的条件之一。
+```
+- 不匹配某些js、path
+```
+将需要去除的js关键字加入到key目录下的JsKey.txt即可
+将需要去除的path关键字加入到key目录下的PathKey.txt即可
+```
+
+- 设置超时时间（-t，默认为0.5秒）
+```
+cd Unauthorized
+python Unauthorized.py -u http://example.com -t 3
+```
+
+- 设置线程数量（-T，默认为50线程）
+```
+cd Unauthorized
+python Unauthorized.py -u http://example.com -T 100
 ```
 - **效果展示**
 ![demo1](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/demo/demo1.png?raw=true)
@@ -61,6 +80,10 @@ python Unauthorized.py -u http://example.com
 
 
 ## 更新
+
+v20230315
+1. 增加自定义超时时间、线程数量功能。
+2. 增加自定义关键字功能，程序将不匹配含关键字的js、path。
 
 v20230308
 1. 优化js提取，解决js重复提取问题。

@@ -11,7 +11,7 @@ session = requests.Session()
 
 class Class_PathUnauthorized(InitInfo.Class_InitInfo):
 
-    def Path_Unauthorized(self, path):
+    def Path_Unauthorized(self, path, Driver_time):
         """
         dic_list:字典列表，存放的是dic字典
         dic ：由标题、URL、response的长度构成的字典
@@ -24,9 +24,15 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
         options.add_argument('blink-settings=imagesEnabled=false')
         driver = webdriver.Chrome(options=options)
         dic_list = []
+        # 设置超时时间，默认为0.5秒
+        if Driver_time is None:
+            driver_time = 0.5
+        else:
+            driver_time = self.args.time_out
+        # 开始检测未授权访问
         for p in path:
             # 检测前端泄露路径未授权
-            driver.set_page_load_timeout(0.5)  # 设置超时时间为1秒，如果1秒后网页还是没有加载完成则抛出异常
+            driver.set_page_load_timeout(driver_time)  # 设置超时时间
             # 根据网站传参的格式，进行不同的请求，增加运行速度
             if "#" in self.args.url:
                 try:

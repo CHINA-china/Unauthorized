@@ -39,11 +39,8 @@ class Class_FindPath(InitInfo.Class_InitInfo):
         for i in self.js_screen:
             js_screen_path_list.append(i)
         # 定义一个常见第三方js库关键字
-        key_list = ["vue", "vuex", "http", "https", "pdf", "react", "jquery", "chunk", "qrcode", "echart", "viewer",
-                    "lazy", "photoswipe", "moment", "day", "video", "swiper", "lodash", "anime", "require", "angular", "/ui", "storage", "base",
-                    "util.js"]
-
-        for key in key_list:
+        for key in open(r'key/JsKey.txt'):
+            key = key.replace("\n", "")
             for js in self.js_screen:
                 # 将js和key匹配
                 screen_js = re.findall(key, js, re.IGNORECASE)
@@ -151,7 +148,6 @@ class Class_FindPath(InitInfo.Class_InitInfo):
         """
         # 列表去重
         path_list = list(set(lists))
-        key_list = ['.png', 'login', '.jpeg', '.jpg', '.svg', '.vue', '.ttf', '.gif', '.mp4', '.mp3', '.css', 'office']
         # 定义一个列表，用于下面for循环匹配删除元素使用
         path_screen_list = []
         # 复制path_list的元素进去
@@ -161,7 +157,8 @@ class Class_FindPath(InitInfo.Class_InitInfo):
         js_temp = []
         # 循环匹配，去除包含关键字的path
         for path in path_list:
-            for key in key_list:
+            for key in open(r'key/PathKey.txt'):
+                key = key.replace("\n", "")
                 # 将path和key匹配
                 screen_path = re.findall(key, path, re.IGNORECASE)
                 # 判断是否匹配上关键字，为true就在列表中删除

@@ -50,7 +50,7 @@ class Class_DictUnauthorized(InitInfo.Class_InitInfo):
 dict_queue = Queue()
 
 
-def Threading(Domain, path):
+def Threading(Domain, path, Thread):
     # 字典路径
     dict_path = r'dict\dict.txt'
     if len(path) == 0:
@@ -87,7 +87,12 @@ def Threading(Domain, path):
     # 多线程
 
     t_list = []
-    for t in range(0, 51):
+    # 设置线程数量
+    if Thread is None:
+        thread = 50
+    else:
+        thread = InitInfo.Class_InitInfo().args.threading
+    for t in range(0, thread):
         t = Class_DictUnauthorized()
         t_threading = threading.Thread(target=t.Dict_Unauthorized)
         t_list.append(t_threading)

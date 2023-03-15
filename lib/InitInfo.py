@@ -8,6 +8,8 @@ class Class_InitInfo():
     def __init__(self):
         pares = argparse.ArgumentParser(description="eg: python Unauthorized.py -u http://example.com")
         pares.add_argument('-u', '--url', required=True, type=str, help="【必选参数】指定一个URL，浏览器地址栏复制下来的效果更佳")
+        pares.add_argument('-t', '--time_out', required=False, type=int, help="【选填参数】设置超时时间，默认0.5秒")
+        pares.add_argument('-T', '--threading', required=False, type=int, help="【选填参数】设置线程数量，默认50线程")
         self.args = pares.parse_args()
         self.header = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
