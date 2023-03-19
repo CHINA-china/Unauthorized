@@ -1,0 +1,12 @@
+.png
+login
+.jpeg
+.jpg
+.svg
+.vue
+.ttf
+.gif
+.mp4
+.mp3
+.css
+office
