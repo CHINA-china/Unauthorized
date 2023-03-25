@@ -198,6 +198,7 @@ class Class_FindPath(InitInfo.Class_InitInfo):
                     if path in path_screen_list:
                         path_screen_list.remove(path)
                         remove_list.append(path)
+            # 将path里的js分离
             if ".js" in path and path not in self.js_screen:
                 # 防止重复循环获取js
                 if path not in self.js_no_while:
@@ -205,7 +206,6 @@ class Class_FindPath(InitInfo.Class_InitInfo):
                     js_temp.append(path)
                     if path in path_screen_list:
                         path_screen_list.remove(path)
-            # 将path里提取出来的js和path分离
             if ".js" not in path:
                 if path.split("/")[0] == "":
                     pass
