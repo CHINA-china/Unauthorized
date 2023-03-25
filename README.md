@@ -77,12 +77,27 @@ python Unauthorized.py -u http://example.com -t 3
 cd Unauthorized
 python Unauthorized.py -u http://example.com -T 100
 ```
+- 对单个js内泄露的path检测（-d，程序会将path与参数值拼接）
+```
+cd Unauthorized
+# 网站为 http://example.com  普通格式
+python Unauthorized.py -u http://example.com/js/test.js -d 'http://example.com'
+# 网站为 http://example.com/#/login  #号格式
+python Unauthorized.py -u http://example.com/js/test.js -d 'http://example.com/#'
+# 网站为 http://example.com/web/  目录格式
+python Unauthorized.py -u http://example.com/js/test.js -d 'http://example.com/web'
+```
+
 - **效果展示**
 ![demo1](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/demo/demo1.png?raw=true)
 ![demo2](https://github.com/CHINA-china/Unauthorize/blob/master/static/picture/demo/demo2.png?raw=true)
 
 
 ## 更新
+
+v20230325
+1. 优化了path匹配正则。
+2. 新增对单个js文件内的path未授权测试。
 
 v20230319
 1. 修复一些问题，增加进度条可视化。

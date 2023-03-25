@@ -1,3 +1,4 @@
+favicon.ico
 .png
 login
 .jpeg

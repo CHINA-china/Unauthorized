@@ -18,7 +18,6 @@ lodash
 anime
 require
 angular
-/ui
 storage
 base
 util.js
@@ -99,7 +98,6 @@ se.js
 zh-hk.js
 sv.js
 sr-cyrl.js
-app.js
 sr.js
 ar-kw.js
 eu.js

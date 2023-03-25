@@ -8,7 +8,6 @@ from selenium import webdriver
 from lib import InitInfo
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-
 # 用于检验print的url状态码
 session = requests.Session()
 warnings.simplefilter('ignore', InsecureRequestWarning)
@@ -40,6 +39,15 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
             # 检测前端泄露路径未授权
             driver.set_page_load_timeout(driver_time)  # 设置超时时间
             # 根据网站传参的格式，进行不同的请求，增加运行速度
+            if self.js_domain:
+                try:
+                    driver.get(self.js_domain + p)
+                except Exception:
+                    pass
+                html = driver.page_source
+                title = driver.title
+                dict_j = {'title': title, 'url': self.js_domain + p, 'length': len(html)}
+                dic_list.append(dict_j)
             if "#" in self.args.url:
                 try:
                     driver.get(self.Url_Domain + '/#' + p)

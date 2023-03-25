@@ -10,7 +10,6 @@ warnings.simplefilter('ignore', InsecureRequestWarning)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
-
 class Class_FindPath(InitInfo.Class_InitInfo):
     def __init__(self):
         super().__init__()
@@ -19,6 +18,8 @@ class Class_FindPath(InitInfo.Class_InitInfo):
         self.js_screen = []
         # 删除了的元素列表
         self.remove_list = []
+        # 防止重复获取js
+        self.js_no_while = []
 
     def Request_Js(self, user_input_url):
         """
@@ -28,9 +29,17 @@ class Class_FindPath(InitInfo.Class_InitInfo):
         """
         respones = requests.get(url=user_input_url, headers=self.header, verify=False)
         if respones.status_code == 200:
-            self.js_path_list = re.findall('\<script.*?src=(.*?\.js).*?\<\/script\>', respones.text)
-            # 将获取到的JS列表，进行清洗
-            return self.Js_Screen(self.js_path_list)
+            if '.js' in str(user_input_url).split('/')[-1]:
+                temp = [str(user_input_url).replace(self.Url_Domain, "")]
+                return self.Request_Path(temp)
+            else:
+                self.js_path_list = re.findall(r'<script.*?src\s*=\s*(?:([\'"])(.*?)\1|([^>\s?]+)).*?>', respones.text)
+                self.js_path_list = [match[1] if match[1] != '' else match[2] for match in self.js_path_list]
+                # 将获取到的JS列表，进行清洗
+                return self.Js_Screen(self.js_path_list)
+        else:
+            print('[Erro]网站状态码为：{}，请先将网站用浏览器解析，或者检测网站是否可正常访问。'.format(respones.status_code))
+            quit()
 
     def Js_Screen(self, js_path_list):
         """
@@ -129,19 +138,28 @@ class Class_FindPath(InitInfo.Class_InitInfo):
             lists ：返回的path列表
         """
         lists = []
+        path_list = []
         for js_path in js_screen_path_list:
             respones = requests.get(url=self.Url_Domain + js_path, headers=self.header, verify=False)
             print(
                 "[{}]".format(time.strftime('%H:%M:%S', time.localtime(time.time()))) + str(self.Url_Domain + js_path))
             if respones.status_code == 200:
-                path_list = re.findall(
-                    r'[\'"]((?:\/|\.\.\/|\.\/)[^\/\>\< \)\(\{\}\,\'\"\\][^\>\< \)\(\{\}\,\'\"\\]*?)[\'"]',
+                re_path1 = re.findall(r"[\'\"]([^\/\>\< \)\(\{\}\,\'\"\\][\w\/]*?\/[\w\/]*?)[\'\"]", respones.text)
+                re_path2 = re.findall(
+                    r'[\'\"]((?:\/|\.\.\/|\.\/)[^\/\>\< \)\(\{\}\,\'\"\\]+(?:\/[^\/\>\< \)\(\{\}\,\'\"\\]*)*)[\'\"]',
                     respones.text)
+                for i in re_path1:
+                    if i not in self.js_no_while:
+                        path_list.append(i)
+                for l in re_path2:
+                    if l not in self.js_no_while:
+                        path_list.append(l)
                 # 去除空列表
                 if len(path_list) > 0:
                     lists.extend(path_list)
             else:
                 continue
+        lists = list(set(lists))
         return self.Path_Screen(lists)
 
     def Path_Screen(self, lists):
@@ -161,6 +179,8 @@ class Class_FindPath(InitInfo.Class_InitInfo):
             path_screen_list.append(i)
         # js临时列表
         js_temp = []
+        # 删除列表
+        remove_list = []
         # 循环匹配，去除包含关键字的path
         for path in path_list:
             for key in open(r'key/PathKey.txt'):
@@ -171,23 +191,42 @@ class Class_FindPath(InitInfo.Class_InitInfo):
                 if screen_path:
                     if path in path_screen_list:
                         path_screen_list.remove(path)
-            # 如果爬取到js链接，就继续进行js清洗，获取path
+                        remove_list.append(path)
             # 将path里提取出来的js和path分离
-            if ".js" in path and path not in self.js_screen:
-                temp = [path]
-                js_temp.extend(temp)
+            if path.split("/")[0] == "":
+                pass
+            elif path.split("/")[0] == ".":
+                path_replace = path.replace("./", "/")
                 if path in path_screen_list:
                     path_screen_list.remove(path)
+                if path not in remove_list:
+                    path_screen_list.append(path_replace)
+            elif path.split("/")[0] == "..":
+                path_replace = path.replace("../", "/")
+                if path in path_screen_list:
+                    path_screen_list.remove(path)
+                if path not in remove_list:
+                    path_screen_list.append(path_replace)
+            else:
+                path_replace = "/" + path
+                if path in path_screen_list:
+                    path_screen_list.remove(path)
+                if path not in remove_list:
+                    path_screen_list.append(path_replace)
+            if ".js" in path and path not in self.js_screen:
+                # 防止重复循环获取js
+                if path not in self.js_no_while:
+                    self.js_no_while.append(path)
+                    js_temp.append(path)
+                    if path in path_screen_list:
+                        path_screen_list.remove(path)
         return path_screen_list, js_temp
 
     def While_Requests_Js(self, Js_temp):
         path_screen_list, js_temp = self.Js_Screen(Js_temp)
         path_list_tmp = []
         path_list_tmp.extend(path_screen_list)
-        while True:
-            if len(js_temp) > 0:
-                self.While_Requests_Js(js_temp)
-            else:
-                break
+        if len(js_temp) > 0:
+            self.While_Requests_Js(js_temp)
         path_list_tmp = list(set(path_list_tmp))
         return path_list_tmp

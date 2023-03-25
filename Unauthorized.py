@@ -11,12 +11,11 @@ def main():
     info = InitInfo.Class_InitInfo()
     info.Info()
     findpath = FindPath.Class_FindPath()
-
     print("[+]目标 " + info.url_protocol + '://' + info.url_port)
     # 爬取path
-
     print("[{}]".format(time.strftime('%H:%M:%S', time.localtime(time.time()))) + "正在获取JS文件")
     path_screen_list, js_temp = findpath.Request_Js(info.args.url)
+
     # 从Path_Screen函数返回的js列表中深入递归提取path
     path_list_tmp = findpath.While_Requests_Js(js_temp)
     # 保存最终提取的path，并去重，除去开头小数点
