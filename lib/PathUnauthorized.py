@@ -7,6 +7,7 @@ from functools import reduce
 from selenium import webdriver
 from lib import InitInfo
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
+from selenium.common.exceptions import TimeoutException, NoAlertPresentException
 
 # 用于检验print的url状态码
 session = requests.Session()
@@ -42,7 +43,16 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
             if self.js_domain:
                 try:
                     driver.get(self.js_domain + p)
+                except TimeoutException:
+                    print("[{}]".format(
+                        time.strftime('%H:%M:%S', time.localtime(time.time()))) + self.js_domain + p + "[连接超时]")
+                    continue
                 except Exception:
+                    pass
+                try:
+                    alert = driver.switch_to.alert
+                    alert.dismiss()  # 关闭警告框
+                except NoAlertPresentException:
                     pass
                 html = driver.page_source
                 title = driver.title
@@ -51,7 +61,15 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
             if "#" in self.args.url:
                 try:
                     driver.get(self.Url_Domain + '/#' + p)
+                except TimeoutException:
+                    print("[{}]".format(
+                        time.strftime('%H:%M:%S', time.localtime(time.time()))) + self.Url_Domain + '/#' + p + "[连接超时]")
                 except Exception:
+                    pass
+                try:
+                    alert = driver.switch_to.alert
+                    alert.dismiss()  # 关闭警告框
+                except NoAlertPresentException:
                     pass
                 html = driver.page_source
                 title = driver.title
@@ -63,7 +81,15 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
                 dic2 = {}
                 try:
                     driver.get(self.Url_Domain + p)
+                except TimeoutException:
+                    print("[{}]".format(
+                        time.strftime('%H:%M:%S', time.localtime(time.time()))) + self.Url_Domain + p + "[连接超时]")
                 except Exception:
+                    pass
+                try:
+                    alert = driver.switch_to.alert
+                    alert.dismiss()  # 关闭警告框
+                except NoAlertPresentException:
                     pass
                 html2 = driver.page_source
                 title2 = driver.title
@@ -75,7 +101,15 @@ class Class_PathUnauthorized(InitInfo.Class_InitInfo):
                 dic2 = {}
                 try:
                     driver.get(self.Url_Domain + p)
+                except TimeoutException:
+                    print("[{}]".format(
+                        time.strftime('%H:%M:%S', time.localtime(time.time()))) + self.Url_Domain + p+ "[连接超时]")
                 except Exception:
+                    pass
+                try:
+                    alert = driver.switch_to.alert
+                    alert.dismiss()  # 关闭警告框
+                except NoAlertPresentException:
                     pass
                 html2 = driver.page_source
                 title2 = driver.title
