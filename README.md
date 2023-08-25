@@ -87,11 +87,11 @@ python Unauthorized.py -u http://example.com -c
 ```
 cd Unauthorized
 # 网站为 http://example.com  普通格式
-python Unauthorized.py -u http://example.com/js/test.js -d 'http://example.com'
+python Unauthorized.py -u http://example.com/js/test.js -d http://example.com
 # 网站为 http://example.com/#/login  #号格式
-python Unauthorized.py -u http://example.com/js/test.js -d 'http://example.com/#'
+python Unauthorized.py -u http://example.com/js/test.js -d http://example.com/#
 # 网站为 http://example.com/web/  目录格式
-python Unauthorized.py -u http://example.com/js/test.js -d 'http://example.com/web'
+python Unauthorized.py -u http://example.com/js/test.js -d http://example.com/web
 ```
 
 - **效果展示**
