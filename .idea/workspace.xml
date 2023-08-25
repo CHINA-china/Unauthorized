@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="68e25ee6-56c9-4556-bab5-f92812b2b910" name="默认的" comment="Merge branch 'master' of github.com:CHINA-china/Unauthorized&#10;&#10;# Conflicts:&#10;#&#9;README.md&#10;#&#9;Unauthorized.py&#10;#&#9;lib/DictUnauthorized.py&#10;#&#9;lib/FindPath.py&#10;#&#9;lib/InitInfo.py&#10;#&#9;lib/OutHtml.py&#10;#&#9;lib/PathUnauthorized.py&#10;#&#9;requirements.txt&#10;#&#9;static/picture/Install/drive2.png">
+      <change afterPath="$PROJECT_DIR$/.idea/Unauthorized.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2MZvoL3RjpPPlSO9YulxMWW6oiY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="TODO_SCOPE" value="所有位置" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Unauthorized" />
+      <recent name="D:\Unauthorized\static\picture\demo" />
+      <recent name="D:\Unauthorized\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.11">
+    <configuration name="11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Unauthorized" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../py程序/练习/草稿" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../py程序/练习/草稿/11.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="121" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Unauthorized" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/121.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DictUnauthorized" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Unauthorized" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/DictUnauthorized.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FindPath" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Unauthorized" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/FindPath.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="q" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Unauthorized" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lib" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lib/q.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.11" />
+        <item itemvalue="Python.FindPath" />
+        <item itemvalue="Python.q" />
+        <item itemvalue="Python.121" />
+        <item itemvalue="Python.DictUnauthorized" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\zpj\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="68e25ee6-56c9-4556-bab5-f92812b2b910" name="默认的" comment="" />
+      <created>1677988092116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677988092116</updated>
+      <workItem from="1677988093501" duration="2267000" />
+      <workItem from="1677990363086" duration="33712000" />
+      <workItem from="1678029591088" duration="47000" />
+      <workItem from="1678029943026" duration="18000" />
+      <workItem from="1678029997969" duration="18000" />
+      <workItem from="1678062663135" duration="5808000" />
+      <workItem from="1678076336042" duration="1096000" />
+      <workItem from="1678082676072" duration="2567000" />
+      <workItem from="1678089988209" duration="2093000" />
+      <workItem from="1678092611941" duration="131000" />
+      <workItem from="1678099957860" duration="4084000" />
+      <workItem from="1678104161523" duration="1484000" />
+      <workItem from="1678105881866" duration="1074000" />
+      <workItem from="1678107056067" duration="93000" />
+      <workItem from="1678107328759" duration="1262000" />
+      <workItem from="1678108885083" duration="438000" />
+      <workItem from="1678109672964" duration="3333000" />
+      <workItem from="1678114330036" duration="434000" />
+      <workItem from="1678114844390" duration="2548000" />
+      <workItem from="1678158306417" duration="618000" />
+      <workItem from="1678159002890" duration="1263000" />
+      <workItem from="1678160299800" duration="9047000" />
+      <workItem from="1678177370736" duration="2287000" />
+      <workItem from="1678199186935" duration="863000" />
+      <workItem from="1678200585435" duration="990000" />
+      <workItem from="1678241670271" duration="5649000" />
+      <workItem from="1678247504399" duration="6522000" />
+      <workItem from="1678263124616" duration="10000" />
+      <workItem from="1678263136334" duration="87000" />
+      <workItem from="1678267619697" duration="18000" />
+      <workItem from="1678271964468" duration="10864000" />
+      <workItem from="1678284670258" duration="1242000" />
+      <workItem from="1678285930561" duration="661000" />
+      <workItem from="1678286797028" duration="254000" />
+      <workItem from="1678287179696" duration="1136000" />
+      <workItem from="1678288334992" duration="206000" />
+      <workItem from="1678288553338" duration="195000" />
+      <workItem from="1678323703780" duration="157000" />
+      <workItem from="1678335504148" duration="38000" />
+      <workItem from="1678349026604" duration="6000" />
+      <workItem from="1678428576427" duration="38000" />
+      <workItem from="1678428626555" duration="42000" />
+      <workItem from="1678428702179" duration="20000" />
+      <workItem from="1678428733867" duration="476000" />
+      <workItem from="1678585002066" duration="199000" />
+      <workItem from="1678708847395" duration="93000" />
+      <workItem from="1678884675053" duration="4895000" />
+      <workItem from="1678889609576" duration="113000" />
+      <workItem from="1678889735879" duration="1130000" />
+      <workItem from="1678949186218" duration="25000" />
+      <workItem from="1679132550700" duration="24000" />
+      <workItem from="1679132588670" duration="82000" />
+      <workItem from="1679132693510" duration="65000" />
+      <workItem from="1679132836287" duration="1705000" />
+      <workItem from="1679134555986" duration="19823000" />
+      <workItem from="1679187169502" duration="18035000" />
+      <workItem from="1679207801079" duration="1504000" />
+      <workItem from="1679209315687" duration="184000" />
+      <workItem from="1679209509463" duration="389000" />
+      <workItem from="1679209909724" duration="407000" />
+      <workItem from="1679210330933" duration="327000" />
+      <workItem from="1679210668328" duration="1105000" />
+      <workItem from="1679211794015" duration="515000" />
+      <workItem from="1679212405975" duration="2868000" />
+      <workItem from="1679215563773" duration="739000" />
+      <workItem from="1679216842318" duration="181000" />
+      <workItem from="1679218413270" duration="113000" />
+      <workItem from="1679302700624" duration="1144000" />
+      <workItem from="1679322114105" duration="2232000" />
+      <workItem from="1679361278702" duration="319000" />
+      <workItem from="1679403427090" duration="2404000" />
+      <workItem from="1679454854579" duration="28000" />
+      <workItem from="1679578021576" duration="55000" />
+      <workItem from="1679620477865" duration="22000" />
+      <workItem from="1679660195793" duration="385000" />
+      <workItem from="1679661068438" duration="10196000" />
+      <workItem from="1679671674623" duration="4351000" />
+      <workItem from="1679713230636" duration="11503000" />
+      <workItem from="1679725812280" duration="20000" />
+      <workItem from="1679728281112" duration="46000" />
+      <workItem from="1679728467359" duration="16000" />
+      <workItem from="1679728595457" duration="49000" />
+      <workItem from="1679728693629" duration="16000" />
+      <workItem from="1679728834850" duration="66000" />
+      <workItem from="1679729702227" duration="20000" />
+      <workItem from="1679730395000" duration="66000" />
+      <workItem from="1679751169389" duration="18000" />
+      <workItem from="1681308082381" duration="81000" />
+      <workItem from="1692959173341" duration="3198000" />
+      <workItem from="1692964342438" duration="927000" />
+      <workItem from="1692966095353" duration="1325000" />
+      <workItem from="1692968722188" duration="2446000" />
+    </task>
+    <task id="LOCAL-00001" summary="v1.0">
+      <created>1678177949891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678177949891</updated>
+    </task>
+    <task id="LOCAL-00002" summary="更新README.md">
+      <created>1678178476561</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678178476561</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更新README.md">
+      <created>1678178626969</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678178626969</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更新README.md">
+      <created>1678178913446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678178913446</updated>
+    </task>
+    <task id="LOCAL-00005" summary="更新README.md">
+      <created>1678200760092</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678200760092</updated>
+    </task>
+    <task id="LOCAL-00006" summary="更新README.md">
+      <created>1678201447373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678201447373</updated>
+    </task>
+    <task id="LOCAL-00007" summary="更新README.md">
+      <created>1678286809914</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678286809914</updated>
+    </task>
+    <task id="LOCAL-00008" summary="2023-03-08更新">
+      <created>1678287305764</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678287305764</updated>
+    </task>
+    <task id="LOCAL-00009" summary="2023-03-08更新">
+      <created>1678287954290</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678287954290</updated>
+    </task>
+    <task id="LOCAL-00010" summary="2023-03-08更新">
+      <created>1678288116053</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678288116053</updated>
+    </task>
+    <task id="LOCAL-00011" summary="2023-03-08更新">
+      <created>1678288433929</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678288433929</updated>
+    </task>
+    <task id="LOCAL-00012" summary="v20230309">
+      <created>1678323758477</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678323758477</updated>
+    </task>
+    <task id="LOCAL-00013" summary="v20230315">
+      <created>1678889225165</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678889225165</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v20230315">
+      <created>1678889909211</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678889909212</updated>
+    </task>
+    <task id="LOCAL-00015" summary="v20230319">
+      <created>1679210162729</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679210162729</updated>
+    </task>
+    <task id="LOCAL-00016" summary="v20230319">
+      <created>1679210527151</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679210527151</updated>
+    </task>
+    <task id="LOCAL-00017" summary="v20230319">
+      <created>1679211710459</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679211710459</updated>
+    </task>
+    <task id="LOCAL-00018" summary="v20230319">
+      <created>1679213798817</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679213798817</updated>
+    </task>
+    <task id="LOCAL-00019" summary="v20230319">
+      <created>1679215595270</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679215595270</updated>
+    </task>
+    <task id="LOCAL-00020" summary="v20230319">
+      <created>1679216206226</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679216206226</updated>
+    </task>
+    <task id="LOCAL-00021" summary="v20230325">
+      <created>1679725221429</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679725221429</updated>
+    </task>
+    <task id="LOCAL-00022" summary="v20230325">
+      <created>1679728311181</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679728311181</updated>
+    </task>
+    <task id="LOCAL-00023" summary="v20230325">
+      <created>1679728888211</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679728888211</updated>
+    </task>
+    <task id="LOCAL-00024" summary="v20230325">
+      <created>1679730429887</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679730429887</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Merge branch 'master' of github.com:CHINA-china/Unauthorized&#10;&#10;# Conflicts:&#10;#&#9;README.md&#10;#&#9;Unauthorized.py&#10;#&#9;lib/DictUnauthorized.py&#10;#&#9;lib/FindPath.py&#10;#&#9;lib/InitInfo.py&#10;#&#9;lib/OutHtml.py&#10;#&#9;lib/PathUnauthorized.py&#10;#&#9;requirements.txt&#10;#&#9;static/picture/Install/drive2.png">
+      <created>1692970894642</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1692970894642</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v1.0" />
+    <MESSAGE value="更新README.md" />
+    <MESSAGE value="2023-03-08更新" />
+    <MESSAGE value="v20230309" />
+    <MESSAGE value="v20230315" />
+    <MESSAGE value="V20230319" />
+    <MESSAGE value="v20230319" />
+    <MESSAGE value="v20230325" />
+    <MESSAGE value="Merge branch 'master' of github.com:CHINA-china/Unauthorized&#10;&#10;# Conflicts:&#10;#&#9;README.md&#10;#&#9;Unauthorized.py&#10;#&#9;lib/DictUnauthorized.py&#10;#&#9;lib/FindPath.py&#10;#&#9;lib/InitInfo.py&#10;#&#9;lib/OutHtml.py&#10;#&#9;lib/PathUnauthorized.py&#10;#&#9;requirements.txt&#10;#&#9;static/picture/Install/drive2.png" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:CHINA-china/Unauthorized&#10;&#10;# Conflicts:&#10;#&#9;README.md&#10;#&#9;Unauthorized.py&#10;#&#9;lib/DictUnauthorized.py&#10;#&#9;lib/FindPath.py&#10;#&#9;lib/InitInfo.py&#10;#&#9;lib/OutHtml.py&#10;#&#9;lib/PathUnauthorized.py&#10;#&#9;requirements.txt&#10;#&#9;static/picture/Install/drive2.png" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="376" y="0" key="CommitChangelistDialog2" timestamp="1692970910280">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="376" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1692970910280" />
+    <state x="534" y="148" key="FileChooserDialogImpl" timestamp="1692959488438">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="534" y="148" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1692959488438" />
+    <state x="255" y="39" key="SettingsEditor" timestamp="1692959495582">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="255" y="39" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1692959495582" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1692970923237">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1692970923237" />
+    <state x="515" y="301" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1692970526798">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="515" y="301" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1692970526798" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Unauthorize$OutHtml.coverage" NAME="OutHtml Coverage Results" MODIFIED="1678279974200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorized$11.coverage" NAME="11 Coverage Results" MODIFIED="1679673773826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../py程序/练习/草稿" />
+    <SUITE FILE_PATH="coverage/Unauthorize$123231.coverage" NAME="123231 Coverage Results" MODIFIED="1678106166589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Unauthorized$q.coverage" NAME="q Coverage Results" MODIFIED="1679404665854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorize$111111.coverage" NAME="111111 Coverage Results" MODIFIED="1678025762519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorize$123.coverage" NAME="123 Coverage Results" MODIFIED="1678115884224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Unauthorized$DictUnauthorized.coverage" NAME="DictUnauthorized Coverage Results" MODIFIED="1679205036080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorize$1212.coverage" NAME="1212 Coverage Results" MODIFIED="1678280038635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorized$FindPath.coverage" NAME="FindPath Coverage Results" MODIFIED="1679672189540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorize$Unauthorized.coverage" NAME="Unauthorized Coverage Results" MODIFIED="1678005273429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Unauthorize$111213123.coverage" NAME="111213123 Coverage Results" MODIFIED="1678077244632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorize$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1678107135493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Unauthorized$121.coverage" NAME="121 Coverage Results" MODIFIED="1679206180988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+    <SUITE FILE_PATH="coverage/Unauthorized$Unauthorized.coverage" NAME="Unauthorized Coverage Results" MODIFIED="1677989692148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Unauthorize$1231231.coverage" NAME="1231231 Coverage Results" MODIFIED="1678429035810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lib" />
+  </component>
+</project>
