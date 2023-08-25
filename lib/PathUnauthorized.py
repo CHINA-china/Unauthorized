@@ -8,7 +8,7 @@ from selenium import webdriver
 from lib import InitInfo
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from selenium.common.exceptions import TimeoutException, NoAlertPresentException
-
+ 
 # 用于检验print的url状态码
 session = requests.Session()
 warnings.simplefilter('ignore', InsecureRequestWarning)
