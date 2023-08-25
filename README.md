@@ -77,6 +77,12 @@ python Unauthorized.py -u http://example.com -t 3
 cd Unauthorized
 python Unauthorized.py -u http://example.com -T 100
 ```
+- 只检测字典内路径（-c，程序会爬取path依次与字典内url拼接）
+```
+cd Unauthorized
+python Unauthorized.py -u http://example.com -c
+```
+
 - 对单个js内泄露的path检测（-d，程序会将path与参数值拼接）
 ```
 cd Unauthorized
@@ -94,6 +100,10 @@ python Unauthorized.py -u http://example.com/js/test.js -d 'http://example.com/w
 
 
 ## 更新
+
+v20230825
+1. 优化了输出结果。
+2. 新增只对字典内路径进行拼接测试。
 
 v20230325
 1. 优化了path匹配正则。
@@ -113,7 +123,7 @@ v20230308
 
 
 ## 引用
-- 默认字典来自以下优先项目：
+- 默认字典来自以下优秀项目：
   1. RouteVulScan (https://github.com/F6JO/RouteVulScan)
 
 

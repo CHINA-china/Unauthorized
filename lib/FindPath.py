@@ -28,7 +28,7 @@ class Class_FindPath(InitInfo.Class_InitInfo):
             js_path_list：获取到的js列表（未清洗）
         """
         respones = requests.get(url=user_input_url, headers=self.header, verify=False)
-        if respones.status_code == 200:
+        if respones.status_code != 404:
             if '.js' in str(user_input_url).split('/')[-1]:
                 temp = [str(user_input_url).replace(self.Url_Domain, "")]
                 return self.Request_Path(temp)

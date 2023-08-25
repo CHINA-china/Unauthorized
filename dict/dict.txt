@@ -1,41 +1,70 @@
-{"re":"nacos","method":"GET","state":"200","url":"/nacos/index.html","info":"Nacos"}
-{"re":"springframework|spring.cloud.bootstrap.location|Spring Actuator Env RCE","method":"GET","state":"200","url":"/env","info":"ActuatorEnv|RCE:spring"}
-{"re":"springframework|spring.cloud.bootstrap.location|Spring Actuator Env RCE","method":"GET","state":"200","url":"/actuator/env","info":"ActuatorEnv|RCE:spring"}
-{"re":"druid","method":"GET","state":"200","url":"/druid/index.html","info":"DruidMonitor"}
-{"re":"api-docs","method":"GET","state":"200","url":"/v2/api-docs","info":"api-docs"}
-{"re":"swagger","method":"GET","state":"200","url":"/swagger-ui.html","info":"Swagger-UI"}
-{"re":"springframework|reloadByURL|createJNDIRealm","method":"GET","state":"200","url":"/jolokia/list","info":"SpringJolokia|XXE/RCE"}
-{"re":"springframework|reloadByURL|createJNDIRealm","method":"GET","state":"200","url":"/actuator/jolokia/list","info":"SpringJolokia|XXE/RCE"}
-{"re":"api","method":"GET","state":"200","url":"/doc.html","info":"DocFile"}
-{"re":"swagger","method":"GET","state":"200","url":"/v1/swagger.json","info":"swagger.json"}
-{"re":"swagger","method":"GET","state":"200","url":"/v2/swagger.json","info":"swagger.json"}
-{"re":"swagger","method":"GET","state":"200","url":"/swagger-resources","info":"swagger-resources"}
-{"re":"ASP.NET|tempuri.org","method":"GET","state":"200","url":"/services","info":"Soap"}
-{"re":"WebAPI","method":"GET","state":"200","url":"/Help","info":"WebAPIHelp"}
-{"re":"WebAPI","method":"GET","state":"200","url":"/help","info":"WebAPIHelp"}
-{"re":"password","method":"POST","state":"401","url":"/bea_wls_deployment_internal/DeploymentService","info":"Weblogic-CVE-2019-2618"}
-{"re":".git","method":"GET","state":"200","url":"/.git/HEAD","info":".git"}
-{"re":"has-props|file|dir","method":"GET","state":"200","url":"/.svn/entries","info":".svn"}
-{"re":"ds_store","method":"GET","state":"200","url":"/.DS_Store","info":".DS_Store"}
-{"re":"README.md","method":"GET","state":"206","url":"/README.md","info":"README.md"}
-{"re":"crossdomain.xml","method":"GET","state":"200","url":"/crossdomain.xml","info":"crossdomain.xml"}
-{"re":".idea","method":"GET","state":"200","url":"/.idea/modules.xml","info":".idea"}
-{"re":"readme.txt","method":"GET","state":"206","url":"/readme.txt","info":"readme.txt"}
-{"re":"api-docs|openapi","method":"GET","state":"200","url":"/v3/api-docs","info":"api-docs"}
-{"re":"User-agent","method":"GET","state":"200","url":"/robots.txt","info":"robots.txt"}
-{"re":"href","method":"GET","state":"200","url":"/actuator/","info":"actuator"}
-{"re":"swagger","method":"GET","state":"200","url":"/api/swagger-ui.html","info":"Swagger"}
-{"re":"Platform|Components","method":"GET","state":"200","url":"/version","info":"DockerUnauthorized"}
-{"re":"repositories","method":"GET","state":"200","url":"/v2/_catalog","info":"DockerRegistry"}
-{"re":"kibana","method":"GET","state":"200","url":"/app/kibana#/","info":"kibanaCVE-2019-7609"}
-{"re":"httpd_design_handlers","method":"GET","state":"200","url":"/_config","info":"CouchDB"}
-{"re":"weblogic server","method":"GET","state":"200","url":"/console/css/%252e%252e%252fconsole.portal","info":"Weblogic-CVE-2020-14883"}
-{"re":"Applications","method":"GET","state":"200","url":"/cluster","info":"HadoopYARN"}
-{"re":"jboss","method":"GET","state":"200","url":"/jmx-console/","info":"JbossUnauthorized"}
-{"re":"jboss","method":"GET","state":"200","url":"/jbossws/","info":"JbossUnauthorized"}
-{"re":"Jenkins","method":"GET","state":"200","url":"/manage","info":"Jenkins"}
-{"re":"ActiveMQ","method":"GET","state":"200","url":"/admin/","info":"ActiveMQ"}
-{"re":"/_cat/","method":"GET","state":"200","url":"/_cat","info":"Elasticsearch"}
-{"re":"Zabbix","method":"GET","state":"200","url":"/zabbix.php?action=problem.view&ddreset=1","info":"Zabbix"}
-{"re":"Dashboard|solr|Request-Handler","method":"GET","state":"200","url":"/solr/admin","info":"Solr"}
-{"re":"Weblogic","method":"GET","state":"200","url":"/console","info":"WeblogicConsole"}
+{"re": "springframework|spring.cloud.bootstrap.location|Spring Actuator Env RCE", "method": "GET", "state": "200", "url": "/env", "info": "Actuator Env"}
+{"re": "springframework|spring.cloud.bootstrap.location|Spring Actuator Env RCE", "method": "GET", "state": "200", "url": "/actuator/env", "info": "Actuator Env"}
+{"re": "swagger|api-docs|api|openapi|apiVersion", "method": "GET", "state": "200", "url": "/v2/api-docs", "info": "api-docs"}
+{"re": "swagger|api-docs|api|openapi|apiVersion", "method": "GET", "state": "200", "url": "/api/v2/api-docs", "info": "api-docs"}
+{"re": "springframework|reloadByURL|createJNDIRealm", "method": "GET", "state": "200", "url": "/jolokia/list", "info": "Spring Jolokia"}
+{"re": "springframework|reloadByURL|createJNDIRealm", "method": "GET", "state": "200", "url": "/actuator/jolokia/list", "info": "Spring Jolokia"}
+{"re": "api", "method": "GET", "state": "200", "url": "/doc.html", "info": "Doc File"}
+{"re": "swagger", "method": "GET", "state": "200", "url": "/v1/swagger.json", "info": "swagger.json"}
+{"re": "swagger", "method": "GET", "state": "200", "url": "/v2/swagger.json", "info": "swagger.json"}
+{"re": "swagger", "method": "GET", "state": "200", "url": "/swagger-resources", "info": "swagger-resources"}
+{"re": "SOAP|WSDL|ASP.NET|tempuri.org", "method": "GET", "state": "200", "url": "/services", "info": "Soap"}
+{"re": "Web API|api", "method": "GET", "state": "200", "url": "/Help", "info": "Web API Help"}
+{"re": "password", "method": "POST", "state": "401", "url": "/bea_wls_deployment_internal/DeploymentService", "info": "Weblogic CVE-2019-2618"}
+{"re": ".git", "method": "GET", "state": "200", "url": "/.git/HEAD", "info": ".git"}
+{"re": "has-props|file|dir", "method": "GET", "state": "200", "url": "/.svn/entries", "info": ".svn"}
+{"re": "ds_store", "method": "GET", "state": "200", "url": "/.DS_Store", "info": ".DS_Store"}
+{"re": "README.md", "method": "GET", "state": "206", "url": "/README.md", "info": "README.md"}
+{"re": "crossdomain.xml", "method": "GET", "state": "200", "url": "/crossdomain.xml", "info": "crossdomain.xml"}
+{"re": ".idea", "method": "GET", "state": "200", "url": "/.idea/modules.xml", "info": ".idea"}
+{"re": "readme.txt", "method": "GET", "state": "200", "url": "/readme.txt", "info": "readme.txt"}
+{"re": "swagger|api|api-docs|openapi|apiVersion", "method": "GET", "state": "200", "url": "/v3/api-docs", "info": "api-docs"}
+{"re": "swagger|api|api-docs|openapi|apiVersion", "method": "GET", "state": "200", "url": "/api/v3/api-docs", "info": "api-docs"}
+{"re": "User-agent", "method": "GET", "state": "200", "url": "/robots.txt", "info": "robots.txt"}
+{"re": "swagger", "method": "GET", "state": "200", "url": "/api/swagger-ui.html", "info": "Swagger"}
+{"re": "Platform|Components", "method": "GET", "state": "200", "url": "/version", "info": "Docker Unauthorized"}
+{"re": "repositories", "method": "GET", "state": "200", "url": "/v2/_catalog", "info": "Docker Registry"}
+{"re": "kibana", "method": "GET", "state": "200", "url": "/app/kibana#/", "info": "kibana CVE-2019-7609"}
+{"re": "httpd_design_handlers", "method": "GET", "state": "200", "url": "/_config", "info": "CouchDB"}
+{"re": "weblogic server", "method": "GET", "state": "200", "url": "/console/css/%252e%252e%252fconsole.portal", "info": "Weblogic CVE-2020-14883"}
+{"re": "Applications", "method": "GET", "state": "200", "url": "/cluster", "info": "HadoopYARN"}
+{"re": "jboss", "method": "GET", "state": "200", "url": "/jmx-console/", "info": "Jboss Unauthorized"}
+{"re": "jboss", "method": "GET", "state": "200", "url": "/jbossws/", "info": "Jboss Unauthorized"}
+{"re": "Jenkins", "method": "GET", "state": "200", "url": "/manage", "info": "Jenkins"}
+{"re": "ActiveMQ", "method": "GET", "state": "200", "url": "/admin/", "info": "ActiveMQ"}
+{"re": "/_cat/", "method": "GET", "state": "200", "url": "/_cat", "info": "Elasticsearch"}
+{"re": "Zabbix", "method": "GET", "state": "200", "url": "/zabbix.php?action=problem.view&ddreset=1", "info": "Zabbix"}
+{"re": "Dashboard|solr|Request-Handler", "method": "GET", "state": "200", "url": "/solr/admin", "info": "Solr"}
+{"re": "Weblogic", "method": "GET", "state": "200", "url": "/console", "info": "Weblogic Console"}
+{"re": "SOAP|WSDL|ASP.NET|tempuri.org", "method": "GET", "state": "200", "url": "/webservice", "info": "Soap"}
+{"re": "swagger|api-docs|api|openapi|apiVersion", "method": "GET", "state": "200", "url": "/api-docs", "info": "api-docs"}
+{"re": "swagger|api-docs|api|openapi|apiVersion", "method": "GET", "state": "200", "url": "/api/api-docs", "info": "api-docs"}
+{"re": "codemirror\\.addone\\.fullscreen\\.js", "method": "GET", "state": "200", "url": "/nacos/index.html", "info": "Nacos"}
+{"re": "(java\\.runtime\\.version)|(java\\.class\\.version)|(sping\\.config\\.location)|(spring\\.application\\.name)|(applicationConfig)|(activeProfiles)|(server\\.port)|(local\\.server\\.port)", "method": "GET", "state": "200", "url": "/env", "info": "Actuator Env"}
+{"re": "(java\\.runtime\\.version)|(java\\.class\\.version)|(sping\\.config\\.location)|(spring\\.application\\.name)|(applicationConfig)|(activeProfiles)|(server\\.port)|(local\\.server\\.port)", "method": "GET", "state": "200", "url": "/actuator/env", "info": "Actuator Env"}
+{"re": "(src=\\\"\\/druid\\.js\\\")|(href\\=\\\"\\/druid\\.css\\\")|druid", "method": "GET", "state": "200", "url": "/druid/index.html", "info": "Druid Monitor"}
+{"re": "(Swagger 2\\.0)|(\\\"swagger\\\"\\:)|(Swagger UI)|(\\<title\\>Swagger UI)|(swaggerVersion)|(id\\=\\\"swagger\\-ui)", "method": "GET", "state": "200", "url": "/v2/api-docs", "info": "api-docs"}
+{"re": "(Swagger 2\\.0)|(\\\"swagger\\\"\\:)|(Swagger UI)|(\\<title\\>Swagger UI)|(swaggerVersion)|(id\\=\\\"swagger\\-ui)", "method": "GET", "state": "200", "url": "/swagger-ui.html", "info": "Swagger-UI"}
+{"re": "springframework|reloadByURL|createJNDIRealm|(\\\"type\\\"\\:\\\"list\\\")", "method": "GET", "state": "200", "url": "/jolokia/list", "info": "Spring Jolokia"}
+{"re": "springframework|reloadByURL|createJNDIRealm|(\\\"type\\\"\\:\\\"list\\\")", "method": "GET", "state": "200", "url": "/actuator/jolokia/list", "info": "Spring Jolokia"}
+{"re": "\\{\\\"\\_links\\\"\\:\\{\\\"self\\\"\\:\\{", "method": "GET", "state": "200", "url": "/actuator/", "info": "actuator"}
+{"re": "(Welcome to Weblogic Application Server)|(Oracle WebLogic Server)|(\\/console\\/framework\\/skins\\/wlsconsole\\/images\\/login_WebLogic_branding\\.png)", "method": "GET", "state": "200", "url": "/console", "info": "Weblogic Console"}
+{"re": ".", "method": "GET", "state": "200", "url": "/root.rar", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/root.zip", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/root.tar", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/root.bak", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/admin.rar", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/admin.tar", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/admin.zip", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/admin.bak", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/web.rar", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/web.tar", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/web.zip", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/web.bak", "info": "Backup File"}
+{"re": ".", "method": "GET", "state": "200", "url": "/ueditor/index.html", "info": "ueditor"}
+{"re": ".", "method": "GET", "state": "200", "url": "/ueditor/jsp/controller.jsp", "info": "jsp ueditor"}
+{"re": ".", "method": "GET", "state": "200", "url": "/ueditor/php/controller.php", "info": "php ueditor"}
+{"re": ".", "method": "GET", "state": "200", "url": "/ueditor/net/controller.ashx", "info": "net ueditor"}
+{"re": ".", "method": "GET", "state": "200", "url": "/ueditor/asp/controller.asp", "info": "asp ueditor"}
+{"re": ".", "method": "GET", "state": "200", "url": "/ckfinder/ckfinder.html", "info": "ckfinder"}
+{"re": ".", "method": "GET", "state": "200", "url": "/UEditor/Process?action=catchimage", "info": "ueditor"}
